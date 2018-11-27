@@ -18,7 +18,7 @@ warnings.simplefilter('ignore')
 fiscalYear = input('What year?')
 if len(fiscalYear) < 1: input('Enter a year, dummy.')
 
-inputpath = '/Users/kellyhess/LGDR/'
+inputpath = '/Users/kellyhess/LGDR/code/'
 
 if fiscalYear != 'test':
 	inputpath = inputpath + fiscalYear +'/'
