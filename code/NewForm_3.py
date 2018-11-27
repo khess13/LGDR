@@ -14,18 +14,21 @@ from pprint import pprint as pp
 
 warnings.simplefilter('ignore')
 
+'''UPDATE FILEPATH'''
+#filepath for files
+inputpath = '/Users/kellyhess/LGDR/code/'
+#filepath for reporting entity names, county, type csv
+county_names = pd.read_csv(inputpath+'/ContactInfo.csv')
+
 '''USER INPUT'''
 fiscalYear = input('What year?')
 if len(fiscalYear) < 1: input('Enter a year, dummy.')
-
-inputpath = '/Users/kellyhess/LGDR/code/'
 
 if fiscalYear != 'test':
 	inputpath = inputpath + fiscalYear +'/'
 
 #list of repEnt names
 #'s with .title() = 'S
-county_names = pd.read_csv('/Users/kellyhess/LGDR/ContactInfo.csv')
 county_names['County'] = county_names['County'].apply(lambda x: x.strip())
 county_names['ReportingEntityType'] = county_names['ReportingEntityType']\
 										.apply(lambda x: x.strip())
