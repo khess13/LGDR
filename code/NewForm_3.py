@@ -16,7 +16,7 @@ warnings.simplefilter('ignore')
 
 '''UPDATE FILEPATH'''
 #filepath for files
-inputpath = '/Users/kellyhess/LGDR/code/'
+inputpath = '/Users/kellyhess/LGDR/'
 #filepath for reporting entity names, county, type csv
 county_names = pd.read_csv(inputpath+'/ContactInfo.csv')
 
@@ -181,10 +181,11 @@ for filez in filesindir:
 	raw_excel = xlfile.iloc[1:9, 1:4]
 
 	#Repeating variables
-	cnty = raw_excel.iat[0,0].title() #.encode('utf8')
-	repEnt = raw_excel.iat[1,0].title() #.encode('utf8')
-	repEntType = raw_excel.iat[2,0].title() #.encode('utf8')
+	cnty = raw_excel.iat[0,0].title().strip() #.encode('utf8')
+	repEnt = raw_excel.iat[1,0].title().strip() #.encode('utf8')
+	repEntType = raw_excel.iat[2,0].title().strip() #.encode('utf8')
 	fiscYr = raw_excel.iat[3,0]#.encode('utf8')
+
 
 	#catch 2019, remove in 2019
 	if fiscYr == '06/30/2019':

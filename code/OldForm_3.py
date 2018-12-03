@@ -16,7 +16,7 @@ warnings.simplefilter('ignore')
 
 '''UPDATE FILEPATH'''
 #filepath for files
-inputpath = '/Users/kellyhess/LGDR/code/'
+inputpath = '/Users/kellyhess/LGDR/'
 #filepath for reporting entity names, county, type csv
 county_names = pd.read_csv(inputpath+'/ContactInfo.csv')
 
