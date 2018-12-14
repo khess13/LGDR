@@ -19,7 +19,7 @@ warnings.simplefilter('ignore')
 #inputpath = '/Users/kellyhess/LGDR'
 inputpath = 'C:\\E160_LGDR_11_27_18\\'
 #filepath for reporting entity names, county, type csv
-county_names = pd.read_csv(inputpath+'\\ContactInfo.csv')
+county_names = pd.read_csv(inputpath+'ContactInfo.csv')
 
 '''USER INPUT'''
 #fiscalYear = input('What year?')
