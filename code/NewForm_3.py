@@ -16,16 +16,17 @@ warnings.simplefilter('ignore')
 
 '''UPDATE FILEPATH'''
 #filepath for files
-inputpath = '/Users/kellyhess/LGDR/'
+#inputpath = '/Users/kellyhess/LGDR'
+inputpath = 'C:\\E160_LGDR_11_27_18\\'
 #filepath for reporting entity names, county, type csv
-county_names = pd.read_csv(inputpath+'/ContactInfo.csv')
+county_names = pd.read_csv(inputpath+'\\ContactInfo.csv')
 
 '''USER INPUT'''
-fiscalYear = input('What year?')
-if len(fiscalYear) < 1: input('Enter a year, dummy.')
+#fiscalYear = input('What year?')
+#if len(fiscalYear) < 1: input('Enter a year, dummy.')
 
-if fiscalYear != 'test':
-	inputpath = inputpath + fiscalYear +'/'
+#if fiscalYear != 'test':
+#	inputpath = inputpath + fiscalYear +'/'
 
 #list of repEnt names
 #'s with .title() = 'S
